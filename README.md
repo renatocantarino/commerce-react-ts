@@ -16,3 +16,4 @@
 3. a DOM da novo render é comparada com a DOM do render passado, Se houve, ocorre um replace na DOM
 4. processo rapido, porem, pode rodar inumeras vezes
 5. lista grandes, informaçoes sendo alteradas inumeras vezes
+6. quando um componente renderiza pela ação de outros componentes, que não tem relação com ele.
