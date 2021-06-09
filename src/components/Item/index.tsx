@@ -18,7 +18,7 @@ const Item: React.FC<Props> = ({ item, handleAddToCart }) => (
             </h3>
             <p>{item.description}</p>
             <h3>
-                {item.price}
+                R$ {item.price}
             </h3>
         </div>
         <Button color='primary' style={{ background: 'lightblue ' }} onClick={() => { handleAddToCart(item) }}> Adicionar</Button>
