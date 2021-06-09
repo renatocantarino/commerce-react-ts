@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { memo } from 'react';
 import Button from '@material-ui/core/Button'
 
 import { Wrapper } from './style'
@@ -9,10 +9,7 @@ type Props = {
     item: CartItemType
     handleAddToCart: (selected: CartItemType) => void
 }
-
-
 const Item: React.FC<Props> = ({ item, handleAddToCart }) => (
-
     <Wrapper>
         <img src={item.image} alt='item' />
         <div>
@@ -29,7 +26,7 @@ const Item: React.FC<Props> = ({ item, handleAddToCart }) => (
 )
 
 
-export default Item;
+export default memo(Item);
 
 
 
